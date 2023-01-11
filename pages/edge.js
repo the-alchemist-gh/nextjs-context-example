@@ -9,8 +9,9 @@ export const getServerSideProps = ({ req }) => {
 };
 
 export default function Page(props) {
-  console.log(props)
-  return JSON.stringify(props);
+  const newcountry = JSON.stringify(props)
+  console.log(newcountry)
+  return newcountry; 
 }
 
 export const config = {
