@@ -10,7 +10,7 @@ export const getServerSideProps = ({ req }) => {
 
 export default function Page(props) {
   const newcountry = JSON.stringify(props)
-  console.log(newcountry)
+  console.log(newcountry.mycountry)
   return newcountry; 
 }
 
