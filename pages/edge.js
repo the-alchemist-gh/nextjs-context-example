@@ -5,10 +5,11 @@ import styles from "../styles/Home.module.css";
 import { getContext } from "../context";
 
 export const getServerSideProps = ({ req }) => {
-  return { props: { foo: getContext(req, "foo") } };
+  return { props: { mycountry: getContext(req, "mycountry") } };
 };
 
 export default function Page(props) {
+  console.log(props)
   return JSON.stringify(props);
 }
 
